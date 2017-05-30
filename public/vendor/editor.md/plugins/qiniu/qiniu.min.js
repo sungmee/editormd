@@ -2,7 +2,7 @@
  * Image (upload) dialog By Qiniu plugin for Editor.md
  *
  * @file        qiniu.js
- * @author      M.Chan <mo@lxooo.com>, 丁丁 <newflydd@189.cn>
+ * @author      M.Chan <mo@lxooo.com>
  * @version     1.4.0
  * @updateTime  2017-05-30
  * {@link       https://github.com/sungmee/editormd}
