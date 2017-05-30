@@ -6,7 +6,13 @@
 
 ## 安装与配置
 
-在 **Laravel** 项目根目录的 `composer.json` 的 `require` 中新增 `"sungmee/editormd": "dev-master",` 依赖，然后执行 `composer update` 进行安装。
+```php
+"require": {
+    "sungmee/editormd": "dev-master"
+},
+```
+
+如上所示，在 **Laravel** 项目根目录的 `composer.json` 的 `require` 中新增 `"sungmee/editormd": "dev-master",` 依赖，然后执行 `composer update` 进行安装。
 
 安装好依赖后，在 `config/app.php` 中添加：
 
