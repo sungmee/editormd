@@ -34,7 +34,7 @@ class EditormdController extends Controller
         $fullUrl    = $config['fullUrl'];
 
         $rules      = [
-            'editormd-image-file' => "required|file|mimes:{$formats}|max:{$maxSize}",
+            'editormd-image-file' => "bail|required|file|mimes:{$formats}|max:{$maxSize}",
         ];
         $messages   = [
             'editormd-image-file.file'  => "文件校验失败",
@@ -50,7 +50,7 @@ class EditormdController extends Controller
                 'message'   => $errors->first('editormd-image-file'),
                 'url'       => '',
             ];
-            return response()->json($fail);
+            return $fail;
         }
 
         $path       = $request->file('editormd-image-file')->store($uploadPath, $disk);
@@ -58,7 +58,7 @@ class EditormdController extends Controller
         $url        = $fullUrl ? asset($url) : $url;
         $success    = ['success' => 1, 'url' => $url];
 
-        return response()->json($success);
+        return $success;
     }
 
 
