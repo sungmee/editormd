@@ -21,10 +21,10 @@ return [
     'uploadPath' => 'editormd/', // 上传文件路径，斜杆收尾。例如以 local 驱动，即相对于 storage/app/public/ 目录
     'fullUrl' => true, // 返回前端的图片 URL。false：返回相对路径；true：返回完整链接
 
-    'qiniuAccessKey' => '', // 七牛 AccessKey
-    'qiniuSecretKey' => '', // 七牛 SecretKey
-    'qiniuBucket' => '',                                        // 七牛 Bucket 名字
-    'qiniuPublishUrl' => '',      // 七牛 CDN 加速域名
+    'qiniuAccessKey' => env('QN_ACCESS_KEY', ''),   // 七牛 AccessKey
+    'qiniuSecretKey' => env('QN_SECRET_KEY', ''),   // 七牛 SecretKey
+    'qiniuBucket' => env('QN_BUCKET', ''),          // 七牛 Bucket 名字
+    'qiniuPublishUrl' => env('QN_PUBLISH_URL', ''), // 七牛 CDN 加速域名
     // 七牛储存上传 URL
     // http 协议 http://up.qiniu.com 或 http://upload.qiniu.com
     // https 协议 - 请根据 Bucket 的储存区域选择，否则出错
