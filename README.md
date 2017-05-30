@@ -1,8 +1,8 @@
 # Editor.md with Qiniu upload for Laravel. 
 
-**Laravel** 的 Markdown 编辑器 **Editor.md**，配置图片本地上传（可自定义储存系统）以及**七牛云**上传。
+**Laravel** 的 Markdown 编辑器 **Editor.md**，配置图片服务器上传（可自定义储存系统，如 S3 等）以及**七牛云**上传。服务器上传使用了 **Laravel** 的文件系统；而七牛上传则依赖七牛官方的 SDK，直接上传到您配置的 **七牛云 Bucket** 下，无需通过服务器中转，速度快，并节省带宽资源。
 
-注意，如果使用本地上传出现**500**错误，一般是运行环境没有安装 PHP 的 FILEINFO 扩展所致，请自行 Google 解决。
+注意，如果上传到服务器出现**500**错误，一般是运行环境没有安装 PHP 的 FILEINFO 扩展所致，请自行 Google 解决。
 
 ## 安装与配置
 
