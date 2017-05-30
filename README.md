@@ -12,7 +12,7 @@
 
 ```php
 'providers' => [
-    Sungmee\Editormd\EditormdServiceProvider::class::class,
+    Sungmee\Editormd\EditormdServiceProvider::class,
 ],
 ```
 
