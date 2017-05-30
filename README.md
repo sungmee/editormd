@@ -27,6 +27,8 @@
 
     php artisan vendor:publish
 
+如需强制发布，可以在上面命令后加上 `--force` 参数，注意这将会覆盖一些旧的配置文件。
+
 ### 使用本地文件储存系统
 
 Editor.md 编辑器图片默认使用 **Local** 储存系统并会上传到 **Laravel** 项目的 `storage/app/public` 目录下。
