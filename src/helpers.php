@@ -6,15 +6,9 @@
  */
 function editor_css()
 {
-
     return '<!-- Editor.md css-->
 <link rel="stylesheet" href="/vendor/editor.md/css/editormd.min.css" />
-<style>
-.editormd-fullscreen {
-    z-index: 9999999;
-}
-</style>';
-
+<style>.editormd-fullscreen {z-index: 9999999;}</style>';
 }
 
 /**
@@ -27,7 +21,6 @@ function editor_js()
     return '<!-- Editor.md js -->
 <script src="/vendor/editor.md/js/editormd.min.js"></script>
 <script src="/vendor/editor.md/plugins/qiniu-dialog/qiniu-dialog.min.js"></script>';
-
 }
 
 /**
@@ -85,5 +78,4 @@ $(function() {
     });
 });
 </script>';
-
 }
