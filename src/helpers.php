@@ -27,7 +27,7 @@ function editor_js()
 {
     return '<!-- Editor.md js -->
 <script src="/vendor/editor.md/js/editormd.min.js"></script>
-<script src="/vendor/editor.md/plugins/qiniu/qiniu.min.js"></script>';
+<script src="/vendor/editor.md/plugins/qiniu-dialog/qiniu-dialog.min.js"></script>';
 
 }
 
@@ -73,7 +73,7 @@ $(function() {
             toolbarIconsClass : { qiniu : "fa-gitlab" },
             toolbarHandlers : {
                 qiniu : function(cm, icon, cursor, selection) {
-                    this.imageDialogQiniu();
+                    this.qiniuDialog();
                 }
             },
             lang : {

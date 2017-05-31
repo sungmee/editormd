@@ -1,7 +1,7 @@
 /*
  * Image (upload) dialog By Qiniu plugin for Editor.md
  *
- * @file        qiniu.js
+ * @file        qiniu-dialog.js
  * @author      M.Chan <mo@lxooo.com>
  * @version     1.4.0
  * @updateTime  2017-05-30
@@ -12,9 +12,9 @@
 
     var factory = function (exports) {
 
-        var pluginName = "image-dialog-qiniu";
+        var pluginName = "qiniu-dialog";
 
-        exports.fn.imageDialogQiniu = function () {
+        exports.fn.qiniuDialog = function () {
 
             var _this = this;
             var cm = this.cm;
