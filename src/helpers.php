@@ -8,7 +8,6 @@ function editor_css()
 {
 
     return '<!-- Editor.md css-->
-<link rel="stylesheet" href="/vendor/editor.md/css/editormd.preview.min.css" />
 <link rel="stylesheet" href="/vendor/editor.md/css/editormd.min.css" />
 <style>
 .editormd-fullscreen {
