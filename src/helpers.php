@@ -8,7 +8,7 @@ function editor_css()
 {
     return '<!-- Editor.md css-->
 <link rel="stylesheet" href="/vendor/editor.md/css/editormd.min.css" />
-<style>.editormd-fullscreen {z-index: 9999999;}</style>';
+<style>.editormd-fullscreen{z-index:9999999;}</style>';
 }
 
 /**
