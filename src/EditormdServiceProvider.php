@@ -44,7 +44,7 @@ class EditormdServiceProvider extends ServiceProvider
 
         // 静态资源
         $this->publishes([
-            __DIR__.'../public/vendor/editor.md' => public_path('vendor/'),
+            __DIR__ . '/../public/vendor/editor.md' => public_path('vendor/'),
         ]);
 
     }
